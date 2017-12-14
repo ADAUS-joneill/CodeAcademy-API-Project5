@@ -121,7 +121,7 @@ aliased as 'percent'. Optionally ordered by the given field in the specified dir
 */
 
 const orderedSports = (country, field, sortAscending) => {
-  return;
+    return "SELECT sport FROM GoldMedal WHERE country ='" + country + "' GROUP BY sport";
 };
 
 module.exports = {
